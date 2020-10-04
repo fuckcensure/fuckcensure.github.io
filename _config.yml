@@ -1,0 +1,55 @@
+# Site
+name: 'FuckCensure'
+description: 'FuckCensure is a site that fights against censorship and injustices in the world. It was founded by Chiisai Nakamoto.'
+logo: 'assets/images/logo.png'
+baseurl: ''
+url: ''
+email: 'chiisainakamoto@mail2tor.com'
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+authors:
+    chiisainakamoto:
+      name:           Chiisai Nakamoto
+      site:           https://github.com/chiisainakamoto
+      avatar:         assets/images/chiisainakamoto.png
+      bio:            "Hello, I am Chiisai Nakamoto, the author of FuckCensure. That I founded with the objective of fighting against censored information as well as the various injustices in the world."
+      email:          chiisainakamoto@mail2tor.com
+      twitter:        https://twitter.com/chiisainakamoto
+
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: Chiisai Nakamoto
+      avatar: assets/images/chiisainakamoto.png
+
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
