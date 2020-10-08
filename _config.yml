@@ -3,7 +3,7 @@ name: 'FuckCensure'
 description: 'FuckCensure is a site that fights against censorship and injustices in the world. It was founded by Chiisai Nakamoto.'
 logo: 'assets/images/logo.png'
 baseurl: ''
-url: 'https://fuckcensure.github.io/'
+url: 'https://fuckcensure.github.io'
 email: 'chiisainakamoto@mail2tor.com'
 
 include: ["_pages"]
